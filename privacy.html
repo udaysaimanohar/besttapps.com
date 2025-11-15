@@ -1,83 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Besttapps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Besttapps</title>
+
+  <!-- Global site stylesheet (update path if needed) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* Small page helpers to ensure consistent spacing */
+    .policy-hero {
+      background: var(--light, #f7f9fc);
+      padding: 56px 16px;
+      text-align: center;
+    }
+    .policy-hero h1 { font-size: 2.2rem; margin-bottom: 6px; color: var(--dark); }
+    .policy-hero p { color: var(--muted); margin-top: 6px; }
+
+    .policy-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px;
+      color: var(--dark);
+      line-height: 1.65;
+    }
+
+    .policy-container h2 { margin-top: 28px; margin-bottom: 12px; font-size: 1.15rem; }
+    .policy-container h3 { margin-top: 18px; margin-bottom: 10px; font-size: 1rem; }
+    .policy-container p, .policy-container li { color: #333; font-size: 15px; }
+
+    .small-note { color: var(--muted); font-size: .95rem; margin-top: 8px; }
+
+    .toc { margin: 12px 0 22px 0; padding-left: 18px; color:var(--muted); }
+    .toc li { margin-bottom: 6px; }
+
+    /* minor responsive */
+    @media (max-width:720px){
+      .policy-hero { padding: 36px 12px; }
+      .policy-container { padding: 24px 14px; }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- NAVBAR (same markup used across your site) -->
   <nav class="navbar">
-    <div class="container">
+    <div class="container nav-container">
       <a href="index.html" class="logo">Besttapps</a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropbtn">Products &amp; Services</a>
+          <a href="#" class="dropbtn">Our Products</a>
           <ul class="dropdown-content">
             <li><a href="bestiee.html">Bestiee</a></li>
             <li><a href="pollplay.html">Pollplay</a></li>
           </ul>
         </li>
+
         <li><a href="about.html">About</a></li>
-        <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+        <li><a class="active" href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+
+      
+      </div>
     </div>
   </nav>
 
-  <header class="page-header">
-    <div class="container">
-      <h1>Privacy Policy</h1>
-    </div>
-  </header>
+  <div class="page-content">
 
-  <main class="container">
-    <p>This Privacy Policy describes how Varshith Fruits and Vegetables Private Limited ("we", "our", "us") collects, uses, and shares information when you use our websites and mobile applications including Bestiee and Pollplay (collectively, the "Services").</p>
-    <h2>Information We Collect</h2>
-    <p>We collect information that you provide to us directly, such as when you create an account, contact us, or otherwise communicate with us. This may include your name, email address, phone number, and any other information you choose to provide.</p>
-    <h2>How We Use Information</h2>
-    <p>We use the information we collect to provide, maintain, and improve our Services, to communicate with you, and to protect our users.</p>
-    <h2>Information Sharing</h2>
-    <p>We do not share personal information with companies, organizations, or individuals outside of Varshith Fruits and Vegetables Private Limited except in the following cases: with your consent, for legal reasons, or to comply with laws and regulations.</p>
-    <h2>Data Security</h2>
-    <p>We use reasonable measures to secure your personal information. However, no method of transmission over the internet or method of electronic storage is completely secure.</p>
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@besttapps.com">support@besttapps.com</a>.</p>
-  </main>
+    <!-- HERO -->
+    <header class="policy-hero" role="banner" aria-labelledby="policy-title">
+      <h1 id="policy-title">Privacy Policy</h1>
+      <p class="small-note">Last updated: <!-- update this date before publishing --> 2025</p>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="brand">
-        <span class="logo">Besttapps</span>
-        <p>Innovative mobile apps.</p>
-      </div>
-      <div>
-        <h4>Information</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <p><a href="mailto:support@besttapps.com">support@besttapps.com</a></p>
-      </div>
-      <div>
-        <a href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" />
-        </a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- POLICY CONTENT -->
+    <main class="policy-container" role="main">
 
-  <script src="assets/js/script.js"></script>
+      <p>
+        This Privacy Policy explains how <strong>Varshith Fruits and Vegetables Private Limited</strong>
+        (“<strong>Company</strong>”, “<strong>we</strong>”, “<strong>us</strong>”, or “<strong>our</strong>”) collects,
+        uses, discloses and protects information when you use our mobile applications (Bestiee, Pollplay)
+        and website (besttapps.com) — collectively the “<strong>Services</strong>”.
+      </p>
+
+      <ul class="toc">
+        <li><strong>1.</strong> Information We Collect</li>
+        <li><strong>2.</strong> How We Use Your Information</li>
+        <li><strong>3.</strong> How We Share Your Information</li>
+        <li><strong>4.</strong> Cookies & Tracking</li>
+        <li><strong>5.</strong> Payments & Virtual Currency</li>
+        <li><strong>6.</strong> Security & Retention</li>
+        <li><strong>7.</strong> Your Rights</li>
+        <li><strong>8.</strong> Children</li>
+        <li><strong>9.</strong> International Transfers</li>
+        <li><strong>10.</strong> Changes to this Policy</li>
+        <li><strong>11.</strong> Contact</li>
+      </ul>
+
+      <h2>1. Information We Collect</h2>
+      <p>We collect information so we can provide, improve, personalize and secure the Services. The types of information we collect include:</p>
+
+      <h3>a) Information you provide directly</h3>
+      <ul>
+        <li><strong>Account details:</strong> name, email address, profile information you optionally provide.</li>
+        <li><strong>Communications:</strong> messages and chat logs you send or receive within the apps, customer support conversations.</li>
+        <li><strong>Voice data:</strong> audio captured during in-app calls when you use voice features; used for call delivery, quality and safety monitoring.</li>
+        <li><strong>Payment details:</strong> payment confirmations, purchase receipts and transaction metadata. (We do not store full card numbers — payment processing is handled by third parties.)</li>
+      </ul>
+
+      <h3>b) Information collected automatically</h3>
+      <ul>
+        <li><strong>Device & technical data:</strong> device model, operating system version, unique device identifiers (including Advertising ID), IP address, and network information.</li>
+        <li><strong>Usage data:</strong> logs of app features you use, pages visited, clicks, error and crash reports, performance metrics.</li>
+        <li><strong>Analytics & diagnostics:</strong> data collected by services such as Firebase and Google Analytics to help us measure and improve the product.</li>
+      </ul>
+
+      <h3>c) Information from third parties</h3>
+      <p>We may receive information from service providers, advertising partners, or fraud detection services (for example Firebase, AdMob, Google Analytics, payment gateways).</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use collected information for the following purposes:</p>
+
+      <ul>
+        <li><strong>Core service delivery:</strong> to enable chat, audio and video communications, real-time voting, account access and profile features.</li>
+        <li><strong>Safety, moderation & fraud prevention:</strong> to detect and prevent abuse, enforce our Terms of Service, investigate suspicious activity and protect users. Chat logs and voice data may be reviewed as part of these processes.</li>
+        <li><strong>Analytics & product improvement:</strong> to understand usage patterns, fix bugs, and develop features (via Firebase, Google Analytics).</li>
+        <li><strong>Advertising & personalization:</strong> to deliver and measure ads served through AdMob and other partners, and to improve ad relevancy where permitted.</li>
+        <li><strong>Payments & billing:</strong> to process purchases, refunds and manage subscriptions in conjunction with third-party payment processors.</li>
+        <li><strong>Communication:</strong> to respond to support requests, send transactional messages, updates about changes to the Services, and security alerts.</li>
+      </ul>
+
+      <h2>3. How We Share Your Information</h2>
+      <p>We do not sell your personal information. We only share data in the following circumstances:</p>
+
+      <h3>a) With service providers</h3>
+      <p>We share information with third-party vendors that perform services on our behalf, such as:</p>
+      <ul>
+        <li>Cloud storage and hosting providers</li>
+        <li>Firebase (analytics, crash reporting, auth)</li>
+        <li>Google services (AdMob, Google Analytics)</li>
+        <li>Payment processors (payment verification and settlement)</li>
+        <li>Customer support platforms</li>
+      </ul>
+      <p>These providers have access only to the information necessary to perform their functions and are contractually obliged to protect your data.</p>
+
+      <h3>b) Legal obligations and protection</h3>
+      <p>We will disclose information if required by law, judicial process, or to protect the rights, property or safety of our users or the public.</p>
+
+      <h3>c) Business transfers</h3>
+      <p>In the event of a merger, sale, acquisition or transfer of assets, user data may be transferred to the acquiring entity consistent with this Privacy Policy.</p>
+
+      <h2>4. Cookies & Tracking</h2>
+      <p>On our website we use cookies and similar technologies to operate the site, remember preferences, perform analytics, and serve ads. You can manage cookies through your browser settings. For mobile apps, we and our partners use identifiers (such as the Android Advertising ID) for analytics and advertising purposes.</p>
+
+      <h2>5. Payments & Virtual Currency</h2>
+      <p>In-app purchases and any virtual currency (coins, tokens) are processed by third-party payment providers. Purchases are final except as required by law. Virtual currency may not have monetary value outside the app unless explicitly stated.</p>
+
+      <h2>6. Security & Data Retention</h2>
+      <p>We implement reasonable administrative, technical and physical safeguards designed to protect your personal information. However, no security system is impenetrable.</p>
+
+      <p><strong>Retention:</strong> We retain account information for as long as your account is active, and we retain certain logs (including chat/voice logs used for moderation or fraud prevention) for a limited period needed to provide, secure and improve the Services or as required by law.</p>
+
+      <h2>7. Your Rights</h2>
+      <p>You may have rights regarding your personal information — for example, the right to access, correct or request deletion of your data. To make a request, please contact us at <a href="mailto:support@besttapps.com">support@besttapps.com</a>. We will verify your request and respond in accordance with applicable laws.</p>
+
+      <h2>8. Children</h2>
+      <p>Our Services are not intended for children under 18. We do not knowingly collect personal information from children under 18. If we discover that we have collected personal data from a minor, we will promptly delete it and close the associated account.</p>
+
+      <h2>9. International Transfers</h2>
+      <p>We operate primarily in India. However, service providers we rely on (such as Firebase, Google) may process and store data on servers located in other countries. Where data is transferred across borders, we require appropriate safeguards consistent with applicable laws.</p>
+
+      <h2>10. Changes to this Privacy Policy</h2>
+      <p>We may update this policy from time to time. When we do, we will update the “Last updated” date above and, where appropriate, provide notice through the Services. Continued use of our Services after such updates indicates your acceptance of the revised policy.</p>
+
+      <h2>11. Contact</h2>
+      <p>If you have questions or wish to exercise your privacy rights, contact our Data Protection contact at:</p>
+
+      <p>
+        <strong>Varshith Fruits and Vegetables Private Limited</strong><br>
+        Registered Address:<br>
+        1-219, Pathavellanti,<br>
+        Vellanti, Nellore, Andhra Pradesh, India<br>
+        Email (Support / DPO): <a href="mailto:support@besttapps.com">support@besttapps.com</a>
+      </p>
+
+      <hr style="margin:28px 0; border:none; border-top:1px solid #eee">
+
+      <p class="small-note">
+        This Privacy Policy is intended to be clear and transparent. It is not a contract. For legal concerns or specific inquiries,
+        please contact us at <a href="mailto:support@besttapps.com">support@besttapps.com</a>.
+      </p>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo" style="margin-top:20px;">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Besttapps</div>
+          <p style="margin-top:8px;color:#cfcff5">Interactive entertainment apps that put users first.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a><br>
+          <a href="bestiee.html">Bestiee</a><br>
+          <a href="pollplay.html">Pollplay</a>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a><br>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:support@besttapps.com">support@besttapps.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="margin-top:18px;">© 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</div>
+    </footer>
+
+  </div> <!-- /.page-content -->
+
+  <!-- AOS (optional) & mobile menu script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    if (window.AOS) AOS.init({ once:true, duration:650 });
+
+    // Mobile menu + dropdown - same behavior used across your pages
+    (function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      const dropBtn = document.querySelector('.dropdown .dropbtn');
+
+      if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', function () {
+          navLinks.classList.toggle('active');
+          mobileMenu.classList.toggle('open');
+        });
+
+        mobileMenu.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            navLinks.classList.toggle('active');
+            e.preventDefault();
+          }
+        });
+      }
+
+      if (dropBtn) {
+        dropBtn.addEventListener('click', function (e) {
+          const isMobile = window.matchMedia('(max-width:820px)').matches;
+          if (isMobile) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

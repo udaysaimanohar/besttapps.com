@@ -1,92 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – Besttapps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Besttapps</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .contact-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .contact-box label {
+      font-weight: 600;
+      margin: 10px 0 6px;
+      display: block;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d4d4d4;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    .contact-box textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .contact-box button {
+      background: linear-gradient(90deg, #1673ff, #34aaff);
+      padding: 12px 22px;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 420px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(9,12,30,0.08);
+    }
+
+    @media (max-width: 900px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="container">
+    <div class="container nav-container">
       <a href="index.html" class="logo">Besttapps</a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropbtn">Products &amp; Services</a>
+          <a href="#" class="dropbtn">Products & Services</a>
           <ul class="dropdown-content">
             <li><a href="bestiee.html">Bestiee</a></li>
             <li><a href="pollplay.html">Pollplay</a></li>
           </ul>
         </li>
+
         <li><a href="about.html">About</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+
+      
     </div>
   </nav>
 
-  <header class="page-header">
-    <div class="container">
-      <h1>Contact Us</h1>
-    </div>
-  </header>
+  <div class="page-content">
 
-  <main class="container">
-    <section>
-      <h2>Get in Touch</h2>
-      <form action="mailto:support@besttapps.com?subject=Website%20Contact" method="post" enctype="text/plain" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+    <!-- HEADER -->
+    <header class="page-hero" style="background:#f7f9fc;padding:60px 16px;text-align:center;">
+      <h1 style="font-size:2.3rem;">Contact Us</h1>
+      <p style="color:#6b7280;margin-top:8px;">We’d love to hear from you.</p>
+    </header>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+    <!-- CONTACT SECTION -->
+    <section class="contact-wrapper">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <!-- LEFT: FORM -->
+      <div class="contact-box">
+        <h2>Get in Touch</h2>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+        <!-- EMAIL SUBMISSION USING FormSubmit -->
+        <!-- <form action="https://formsubmit.co/support@besttapps.com" method="POST"> -->
+
+          <!-- Protect from spam -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Contact Submission - Besttapps">
+          <input type="hidden" name="_template" value="table">
+
+          <label>Name</label>
+          <input type="text" name="name" required>
+
+          <label>Email</label>
+          <input type="email" name="email" required>
+
+          <label>Message</label>
+          <textarea name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- CONTACT DETAILS -->
+        <div style="margin-top:25px;">
+          <h3>Contact Details</h3>
+          <p><strong>Registered Address:</strong><br>
+            1-219, PATHAVELLANTI,<br>
+            VELLANTI, NELLORE, Andhra Pradesh
+          </p>
+
+          <p><strong>Email:</strong><br>
+            <a href="mailto:support@besttapps.com">support@besttapps.com</a><br>
+            <a href="mailto:ajaymajnu677@gmail.com">ajaymajnu677@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: GOOGLE MAP -->
+      <div class="map-container">
+        <iframe 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          style="border:0"
+          allowfullscreen 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Nellore%20Andhra%20Pradesh&output=embed">
+        </iframe>
+      </div>
+
     </section>
 
-    <section>
-      <h2>Contact Details</h2>
-      <p><strong>Registered Address:</strong><br />1-219, S C COLONY, PATHAVELLANTI, VELLANTI, NELLORE, ANDHRA PRADESH</p>
-      <p><strong>Email:</strong> <a href="mailto:support@besttapps.com">support@besttapps.com</a> | <a href="mailto:ajaymajnu677@gmail.com">ajaymajnu677@gmail.com</a></p>
-    </section>
-  </main>
+  </div>
 
-  <footer class="site-footer">
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
-      <div class="brand">
-        <span class="logo">Besttapps</span>
-        <p>Innovative mobile apps.</p>
-      </div>
       <div>
-        <h4>Information</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        </ul>
+        <div class="logo">Besttapps</div>
+        <p style="margin-top:8px;color:#cfcff5">Interactive entertainment apps that put users first.</p>
       </div>
+
       <div>
-        <h4>Contact Us</h4>
-        <p><a href="mailto:support@besttapps.com">support@besttapps.com</a></p>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="bestiee.html">Bestiee</a><br>
+        <a href="pollplay.html">Pollplay</a>
       </div>
+
       <div>
-        <a href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" />
-        </a>
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:support@besttapps.com">support@besttapps.com</a>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</p>
-    </div>
+
+    <div class="footer-bottom">© 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.
+        </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
 </body>
 </html>

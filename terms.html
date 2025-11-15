@@ -1,84 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service – Besttapps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms & Conditions — Besttapps</title>
+
+  <!-- Global stylesheet (update path if needed) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Optional: AOS for subtle animations (already used sitewide) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Page-specific helpers */
+    .terms-hero {
+      background: var(--light, #f7f9fc);
+      padding: 56px 16px;
+      text-align: center;
+    }
+    .terms-hero h1 { font-size: 2.2rem; margin-bottom: 6px; color: var(--dark, #0a0a23); }
+    .terms-hero p { color: var(--muted, #6b7280); margin-top: 6px; }
+
+    .terms-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px;
+      color: var(--dark, #0a0a23);
+      line-height: 1.6;
+    }
+
+    .terms-container h2 { margin-top: 28px; margin-bottom: 12px; font-size: 1.1rem; }
+    .terms-container h3 { margin-top: 18px; margin-bottom: 10px; font-size: 1rem; }
+    .terms-container p, .terms-container li { color: #333; font-size: 15px; }
+
+    .toc { margin: 12px 0 22px 0; padding-left: 18px; color:var(--muted); }
+    .toc li { margin-bottom: 6px; }
+
+    /* responsive */
+    @media (max-width:720px){
+      .terms-hero { padding: 36px 12px; }
+      .terms-container { padding: 24px 14px; }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- NAVBAR (same markup used across the site) -->
   <nav class="navbar">
-    <div class="container">
+    <div class="container nav-container">
       <a href="index.html" class="logo">Besttapps</a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropbtn">Products &amp; Services</a>
+          <a href="#" class="dropbtn">Our Products</a>
           <ul class="dropdown-content">
             <li><a href="bestiee.html">Bestiee</a></li>
             <li><a href="pollplay.html">Pollplay</a></li>
           </ul>
         </li>
+
         <li><a href="about.html">About</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html" class="active">Terms of Service</a></li>
+        <li><a class="active" href="terms.html">Terms of Service</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+
+      
+      </div>
     </div>
   </nav>
 
-  <header class="page-header">
-    <div class="container">
-      <h1>Terms of Service</h1>
-    </div>
-  </header>
+  <div class="page-content">
 
-  <main class="container">
-    <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using our Services, you agree to be bound by these Terms of Service.</p>
-    <h2>2. Use of Services</h2>
-    <p>You agree to use the Services only for lawful purposes and in accordance with these Terms.</p>
-    <h2>3. Intellectual Property</h2>
-    <p>All content and materials available on the Services are the property of Varshith Fruits and Vegetables Private Limited or its licensors.</p>
-    <h2>4. Termination</h2>
-    <p>We may terminate or suspend your access to the Services immediately, without prior notice or liability, for any reason.</p>
-    <h2>5. Governing Law</h2>
-    <p>These Terms shall be governed by and construed in accordance with the laws of India.</p>
-    <h2>6. Changes to Terms</h2>
-    <p>We reserve the right to modify or replace these Terms at any time. Continued use of the Services after any changes constitutes acceptance of the new Terms.</p>
-    <p>If you have any questions about these Terms, please contact us at <a href="mailto:support@besttapps.com">support@besttapps.com</a>.</p>
-  </main>
+    <!-- HERO -->
+    <header class="terms-hero" role="banner" aria-labelledby="terms-title">
+      <h1 id="terms-title">Terms & Conditions</h1>
+      <p class="small-note">Last updated: 2025</p>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="brand">
-        <span class="logo">Besttapps</span>
-        <p>Innovative mobile apps.</p>
-      </div>
-      <div>
-        <h4>Information</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <p><a href="mailto:support@besttapps.com">support@besttapps.com</a></p>
-      </div>
-      <div>
-        <a href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" />
-        </a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- TERMS CONTENT -->
+    <main class="terms-container" role="main">
 
-  <script src="assets/js/script.js"></script>
+      <p>
+        Welcome to <strong>Besttapps</strong>. These Terms & Conditions (“<strong>Terms</strong>”) govern your
+        access to and use of our mobile applications (<strong>Bestiee</strong>, <strong>Pollplay</strong>)
+        and the website <strong>besttapps.com</strong> (collectively, the “<strong>Services</strong>”).
+        The Services are owned and operated by <strong>Varshith Fruits and Vegetables Private Limited</strong>.
+        By accessing or using the Services you agree to be bound by these Terms. If you do not agree,
+        please discontinue use of the Services immediately.
+      </p>
+
+      <ul class="toc">
+        <li><strong>1.</strong> Eligibility</li>
+        <li><strong>2.</strong> Your Account</li>
+        <li><strong>3.</strong> Use of Services & Prohibited Conduct</li>
+        <li><strong>4.</strong> Content & Moderation</li>
+        <li><strong>5.</strong> Virtual Currency & Purchases</li>
+        <li><strong>6.</strong> Payments & Subscriptions</li>
+        <li><strong>7.</strong> Advertising & Third Parties</li>
+        <li><strong>8.</strong> Intellectual Property</li>
+        <li><strong>9.</strong> Safety, Reporting & Enforcement</li>
+        <li><strong>10.</strong> Account Suspension & Termination</li>
+        <li><strong>11.</strong> Disclaimers</li>
+        <li><strong>12.</strong> Limitation of Liability</li>
+        <li><strong>13.</strong> Governing Law & Dispute Resolution</li>
+        <li><strong>14.</strong> Changes to Terms</li>
+        <li><strong>15.</strong> Contact</li>
+      </ul>
+
+      <h2>1. Eligibility</h2>
+      <p>
+        You must be at least <strong>18 years old</strong> (or the age of legal majority in your jurisdiction)
+        to use the Services. By using the Services you represent and warrant that you meet this requirement
+        and have the legal capacity to enter into these Terms.
+      </p>
+
+      <h2>2. Your Account</h2>
+      <p>
+        Certain features may require an account. You are responsible for:
+      </p>
+      <ul>
+        <li>Maintaining the security and confidentiality of your login credentials;</li>
+        <li>All activity that occurs under your account;</li>
+        <li>Providing accurate, complete and up-to-date information as requested.</li>
+      </ul>
+      <p>
+        You must notify us immediately of any unauthorized use or breach of security. We reserve the right to
+        suspend, disable or terminate accounts that breach these Terms or are subject to suspicious activity.
+      </p>
+
+      <h2>3. Use of Services & Prohibited Conduct</h2>
+      <p>
+        You agree to use the Services only for lawful and permitted purposes. You must not:
+      </p>
+      <ul>
+        <li>Use the Services to harass, defame, threaten, or harm others;</li>
+        <li>Post, transmit or store sexually explicit, hateful, violent, or illegal content;</li>
+        <li>Impersonate others or misrepresent your identity;</li>
+        <li>Use automated or scripted tools (bots, scrapers) to access or interact with the Services;</li>
+        <li>Interfere with the security, integrity, or availability of the Services;</li>
+        <li>Manipulate votes, ratings, contests, or any competitive features;</li>
+        <li>Record, copy, or distribute private communications where prohibited by law or without consent.</li>
+      </ul>
+      <p>
+        Violation of these rules may result in immediate action including warnings, temporary suspension,
+        permanent bans, or legal action where appropriate.
+      </p>
+
+      <h2>4. Content & Moderation</h2>
+      <p>
+        Users generate content on our platform (messages, profiles, audio/video). While we do not claim ownership
+        of user content, by using the Services you grant the Company a worldwide, non-exclusive, royalty-free license
+        to use and display such content as necessary to provide the Services.
+      </p>
+      <p>
+        We may monitor or review user content (including chat logs and voice data) for safety, moderation, fraud
+        detection, and compliance with these Terms. We will take action where content violates our policies or the law.
+      </p>
+
+      <h2>5. Virtual Currency & Purchases</h2>
+      <p>
+        Our Services may include virtual currency (coins, tokens) and in-app purchases. You acknowledge:
+      </p>
+      <ul>
+        <li>Virtual currency **does not** have cash value outside the Service unless explicitly stated;</li>
+        <li>Purchases are final and non-refundable except where required by law or the payment provider’s policies;</li>
+        <li>We may modify pricing, offers, or the exchange rate for virtual currency at any time;</li>
+        <li>Virtual currency is non-transferable unless explicitly supported by the app.</li>
+      </ul>
+
+      <h2>6. Payments & Subscriptions</h2>
+      <p>
+        Payments are processed by third-party payment providers (e.g., Google Play Billing, payment gateways).
+        We do not store full card numbers or banking information. You are responsible for ensuring your payment
+        method is valid and authorized. Subscription and billing terms (if any) will be governed by the specific
+        subscription agreement and applicable third-party policies.
+      </p>
+
+      <h2>7. Advertising & Third Parties</h2>
+      <p>
+        The Services may include advertisements from third parties (for example, through Google AdMob). Advertisers
+        are responsible for their ad content. We do not endorse third-party content and are not liable for any
+        interactions you have with advertisers or external websites.
+      </p>
+
+      <h2>8. Intellectual Property</h2>
+      <p>
+        All intellectual property rights in the Services (including code, design, logos, and content owned by the
+        Company) are the exclusive property of Varshith Fruits and Vegetables Private Limited or its licensors.
+        You may not copy, modify, distribute, or create derivative works without our prior written consent.
+      </p>
+
+      <h2>9. Safety, Reporting & Enforcement</h2>
+      <p>
+        We are committed to user safety. If you encounter behavior that violates these Terms, please report it to
+        <strong>support@besttapps.com</strong>. We will investigate reports and may remove content, suspend accounts,
+        or take other enforcement measures as appropriate.
+      </p>
+
+      <h2>10. Account Suspension & Termination</h2>
+      <p>
+        We may suspend or terminate your access in cases of:
+      </p>
+      <ul>
+        <li>Violation of these Terms;</li>
+        <li>Illegal activity or fraud;</li>
+        <li>Repeated breaches of community guidelines;</li>
+        <li>Requests from law enforcement or to comply with legal obligations.</li>
+      </ul>
+      <p>
+        If your account is terminated, you may lose access to content, balances, or rewards associated with the account.
+      </p>
+
+      <h2>11. Disclaimers</h2>
+      <p>
+        The Services are provided on an “<em>AS IS</em>” and “<em>AS AVAILABLE</em>” basis. We do not guarantee
+        uninterrupted access, error-free operation, or the accuracy of user-generated content. To the fullest extent
+        permitted by law, we disclaim all warranties, whether express or implied.
+      </p>
+
+      <h2>12. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by applicable law, Varshith Fruits and Vegetables Private Limited,
+        its affiliates, officers, directors, employees, and agents will not be liable for any indirect, special,
+        incidental, consequential, or punitive damages arising from your use of the Services. Our aggregate liability
+        for direct damages shall be limited to the amounts you have paid to us in the 12 months preceding the claim,
+        if any.
+      </p>
+
+      <h2>13. Governing Law & Dispute Resolution</h2>
+      <p>
+        These Terms are governed by the laws of India. Any dispute arising out of or related to these Terms shall
+        be subject to the exclusive jurisdiction of the courts located in <strong>Nellore, Andhra Pradesh, India</strong>.
+      </p>
+
+      <h2>14. Changes to Terms</h2>
+      <p>
+        We may update these Terms from time to time. When we do, we will post the updated Terms on this page and
+        update the “Last updated” date. Continued use of the Services after changes indicates your acceptance of the
+        revised Terms.
+      </p>
+
+      <h2>15. Contact</h2>
+      <p>
+        If you have questions, concerns, or requests regarding these Terms, please contact us at:
+      </p>
+      <p>
+        <strong>Varshith Fruits and Vegetables Private Limited</strong><br>
+        Registered Address:<br>
+        1-219, Pathavellanti,<br>
+        Vellanti, Nellore, Andhra Pradesh, India<br>
+        Email (Support / Legal): <a href="mailto:support@besttapps.com">support@besttapps.com</a>
+      </p>
+
+      <hr style="margin:28px 0; border:none; border-top:1px solid #eee">
+
+      <p class="small-note">
+        These Terms do not create any third-party beneficiary rights. If any provision of these Terms is found to be
+        unenforceable, the remaining provisions will remain in full force and effect.
+      </p>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo" style="margin-top:20px;">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Besttapps</div>
+          <p style="margin-top:8px;color:#cfcff5">Interactive entertainment apps that put users first.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a><br>
+          <a href="bestiee.html">Bestiee</a><br>
+          <a href="pollplay.html">Pollplay</a>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a><br>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:support@besttapps.com">support@besttapps.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="margin-top:18px;">© 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</div>
+    </footer>
+
+  </div> <!-- /.page-content -->
+
+  <!-- AOS & Mobile menu script (same behavior used across pages) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    if (window.AOS) AOS.init({ once: true, duration: 650 });
+
+    (function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      const dropBtn = document.querySelector('.dropdown .dropbtn');
+
+      if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', function () {
+          navLinks.classList.toggle('active');
+          mobileMenu.classList.toggle('open');
+        });
+
+        mobileMenu.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            navLinks.classList.toggle('active');
+            e.preventDefault();
+          }
+        });
+      }
+
+      if (dropBtn) {
+        dropBtn.addEventListener('click', function (e) {
+          const isMobile = window.matchMedia('(max-width:820px)').matches;
+          if (isMobile) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
