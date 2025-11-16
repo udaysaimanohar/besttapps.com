@@ -64,11 +64,13 @@
 
         <li><a href="about.html">About</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
         <li><a class="active" href="terms.html">Terms of Service</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      
+      <div class="menu-toggle" id="mobile-menu" aria-label="Open menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
       </div>
     </div>
   </nav>
@@ -88,7 +90,7 @@
         Welcome to <strong>Besttapps</strong>. These Terms & Conditions (“<strong>Terms</strong>”) govern your
         access to and use of our mobile applications (<strong>Bestiee</strong>, <strong>Pollplay</strong>)
         and the website <strong>besttapps.com</strong> (collectively, the “<strong>Services</strong>”).
-        The Services are owned and operated by <strong>Varshith Fruits and Vegetables Private Limited</strong>.
+        The Services are owned and operated by <strong>Varshith Vegetables and Fruits Private Limited</strong>.
         By accessing or using the Services you agree to be bound by these Terms. If you do not agree,
         please discontinue use of the Services immediately.
       </p>
@@ -190,7 +192,7 @@
       <h2>8. Intellectual Property</h2>
       <p>
         All intellectual property rights in the Services (including code, design, logos, and content owned by the
-        Company) are the exclusive property of Varshith Fruits and Vegetables Private Limited or its licensors.
+        Company) are the exclusive property of Varshith Vegetables and Fruits Private Limited or its licensors.
         You may not copy, modify, distribute, or create derivative works without our prior written consent.
       </p>
 
@@ -224,7 +226,7 @@
 
       <h2>12. Limitation of Liability</h2>
       <p>
-        To the maximum extent permitted by applicable law, Varshith Fruits and Vegetables Private Limited,
+        To the maximum extent permitted by applicable law, Varshith Vegetables and Fruits Private Limited,
         its affiliates, officers, directors, employees, and agents will not be liable for any indirect, special,
         incidental, consequential, or punitive damages arising from your use of the Services. Our aggregate liability
         for direct damages shall be limited to the amounts you have paid to us in the 12 months preceding the claim,
@@ -249,10 +251,11 @@
         If you have questions, concerns, or requests regarding these Terms, please contact us at:
       </p>
       <p>
-        <strong>Varshith Fruits and Vegetables Private Limited</strong><br>
+        <strong>Varshith Vegetables and Fruits Private Limited</strong><br>
         Registered Address:<br>
-        1-219, Pathavellanti,<br>
-        Vellanti, Nellore, Andhra Pradesh, India<br>
+        28/4/300, Prashanti nagar,<br>
+        Vengalrao Nagar, Nellore -524004, <br>
+        Andhra Pradesh, India<br>
         Email (Support / Legal): <a href="mailto:support@besttapps.com">support@besttapps.com</a>
       </p>
 
@@ -283,6 +286,7 @@
         <div>
           <h4>Legal</h4>
           <a href="privacy.html">Privacy Policy</a><br>
+          <a href="refund.html">Refund Policy</a><br>
           <a href="terms.html">Terms & Conditions</a>
         </div>
 
@@ -292,7 +296,7 @@
         </div>
       </div>
 
-      <div class="footer-bottom" style="margin-top:18px;">© 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.</div>
+      <div class="footer-bottom" style="margin-top:18px;">© 2025 Varshith Vegetables and Fruits Private Limited. All rights reserved.</div>
     </footer>
 
   </div> <!-- /.page-content -->
@@ -328,6 +332,21 @@
             e.preventDefault();
             this.parentElement.classList.toggle('open');
           }
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function(){
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', function(){
+          navLinks.classList.toggle('active');
+          mobileMenu.classList.toggle('open');
+        });
+        mobileMenu.addEventListener('keydown', function(e){
+          if(e.key==='Enter' || e.key===' '){ navLinks.classList.toggle('active'); e.preventDefault(); }
         });
       }
     })();

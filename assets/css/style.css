@@ -12,6 +12,12 @@
   padding: 0;
 }
 
+/* Make media scale fluidly by default */
+img, video, svg, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 html {scroll-behavior:smooth;}
 body {
   font-family: "Inter", Arial, sans-serif;
@@ -175,7 +181,7 @@ body {
 }
 
 .intro-strip{padding:2rem 0;background:#0f0a37;color:#e6e6f0}
-.intro-strip .strip-inner{padding: auto;margin: 200px;max-width:1100px;display:flex;flex-wrap:wrap;gap:1.25rem;align-items:center;justify-content:space-between}
+.intro-strip .strip-inner{padding: 20px; margin: 0 auto; max-width:1100px; display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center; justify-content:space-between}
 .intro-strip h2{padding: 20px;font-size:2rem;color:#fff}
 .intro-strip p{padding: 20px;max-width:720px;color:#cfd3ff}
 
@@ -408,4 +414,12 @@ body {
 /* Add margin so content is visible under navbar */
 .page-content {
   margin-top: 100px;
+}
+
+/* Final overrides: ensure hamburger visibility on mobile */
+@media (max-width: 900px) {
+  .navbar .menu-toggle { display:flex; align-items:center; justify-content:center; padding:6px; }
+  .navbar .menu-toggle span { background:#ffffff; opacity:1; }
+  .navbar .nav-links { display:none; }
+  .navbar .nav-links.active { display:flex; }
 }

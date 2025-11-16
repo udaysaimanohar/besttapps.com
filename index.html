@@ -36,12 +36,12 @@
             justify-content: center;
         }
         .hero h1 {
-            font-size: 52px;
+            font-size: clamp(32px, 5vw, 52px);
             font-weight: 700;
         }
         .hero p {
             margin-top: 20px;
-            font-size: 20px;
+            font-size: clamp(16px, 2.2vw, 20px);
             opacity: 0.9;
         }
         .hero .btns {
@@ -81,7 +81,8 @@
         }
 
         .card {
-            width: 350px;
+            flex: 1 1 300px;
+            max-width: 360px;
             background: #ffffff;
             padding: 30px;
             border-radius: 16px;
@@ -125,7 +126,8 @@
         }
 
         .why-card {
-            width: 300px;
+            flex: 1 1 260px;
+            max-width: 320px;
             background: #f7f9ff;
             border-radius: 16px;
             padding: 30px;
@@ -149,7 +151,8 @@
         }
 
         .mv-box {
-            width: 430px;
+            flex: 1 1 320px;
+            max-width: 480px;
             padding: 30px;
             background: #eef6ff;
             border-radius: 12px;
@@ -218,6 +221,7 @@
           </li>
           <li><a href="about.html">About</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -324,6 +328,7 @@
             <div>
                 <h3>Legal</h3>
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund Policy</a>
                 <a href="terms.html">Terms & Conditions</a>
             </div>
             <div>
@@ -333,7 +338,7 @@
         </div>
 
         <p style="text-align:center; margin-top:30px; opacity:0.6;">
-            © 2025 Varshith Fruits and Vegetables Private Limited. All rights reserved.
+            © 2025 Varshith Vegetables and Fruits Private Limited. All rights reserved.
         </p>
     </footer>
 
