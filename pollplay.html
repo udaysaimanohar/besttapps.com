@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -12,21 +13,25 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    :root{
-      --dark:#0a0a23;
-      --accent:#009fff;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --glass: rgba(255,255,255,0.06);
+    :root {
+      --dark: #0a0a23;
+      --accent: #009fff;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --glass: rgba(255, 255, 255, 0.06);
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:'Poppins',sans-serif;
-      color:#0b1220;
-      background:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #0b1220;
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     /* NAV
@@ -58,180 +63,307 @@
       box-shadow:0 6px 18px rgba(0,0,0,0.12);
     } */
 
-    main{margin-top:70px}
+    main {
+      margin-top: 70px
+    }
 
     /* HERO */
-    .hero{
-      background: linear-gradient(180deg,#f7fbff 0%, #f2f6fb 35%);
-      padding:48px 40px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+    .hero {
+      background: linear-gradient(180deg, #f7fbff 0%, #f2f6fb 35%);
+      padding: 48px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .hero-inner{
-      width:100%;
-      max-width:1100px;
-      display:grid;
+
+    .hero-inner {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
       grid-template-columns: 120px 1fr;
-      gap:28px;
-      align-items:center;
-      padding:36px;
-      border-radius:12px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
-      box-shadow: 0 12px 40px rgba(10,10,35,0.06);
+      gap: 28px;
+      align-items: center;
+      padding: 36px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+      box-shadow: 0 12px 40px rgba(10, 10, 35, 0.06);
     }
 
     .app-logo {
-      width:120px; height:120px; border-radius:18px;
-      display:flex; align-items:center; justify-content:center;
-      background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      flex-shrink:0;
+      width: 120px;
+      height: 120px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
     }
-    .app-logo img{max-width:86%; max-height:86%}
 
-    .hero-content h1{
-      margin:0 0 12px 0;
-      font-size:34px; font-weight:700; color:#0b1220;
-      line-height:1.05;
+    .app-logo img {
+      max-width: 86%;
+      max-height: 86%
     }
-    .hero-content p{
-      margin:0 0 18px 0;
-      color:var(--muted);
-      font-size:17px;
+
+    .hero-content h1 {
+      margin: 0 0 12px 0;
+      font-size: 34px;
+      font-weight: 700;
+      color: #0b1220;
+      line-height: 1.05;
     }
-    .hero-cta{display:flex; gap:14px; align-items:center}
-    .btn-primary{
-      background: linear-gradient(90deg,#1673ff,#34aaff);
-      color:#fff; padding:12px 20px; border-radius:10px;
-      text-decoration:none; font-weight:600; box-shadow:0 8px 26px rgba(16,123,255,0.12);
-      display:inline-flex; gap:10px; align-items:center;
+
+    .hero-content p {
+      margin: 0 0 18px 0;
+      color: var(--muted);
+      font-size: 17px;
     }
-    .btn-secondary{
-      background:transparent; color:#0b1220; padding:12px 18px; border-radius:10px;
-      border:1px solid rgba(11,18,32,0.06); text-decoration:none; font-weight:600;
+
+    .hero-cta {
+      display: flex;
+      gap: 14px;
+      align-items: center
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #1673ff, #34aaff);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 8px 26px rgba(16, 123, 255, 0.12);
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #0b1220;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(11, 18, 32, 0.06);
+      text-decoration: none;
+      font-weight: 600;
     }
 
     /* SECTION LAYOUT */
     .section {
-      padding:64px 24px;
-      max-width:1100px;
-      margin:0 auto;
+      padding: 64px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
-    .section-title{
-      font-size:28px; font-weight:700; margin-bottom:20px; color:#0b1220;
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #0b1220;
     }
-    .section-sub{color:var(--muted); margin-bottom:28px}
+
+    .section-sub {
+      color: var(--muted);
+      margin-bottom: 28px
+    }
 
     /* FEATURES GRID */
-    .features-grid{
-      display:grid;
-      grid-template-columns: repeat(3,1fr);
-      gap:22px;
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
-    .feature{
+
+    .feature {
       background: #fff;
-      border-radius:12px;
-      padding:22px;
-      box-shadow:0 10px 30px rgba(9, 12, 30, 0.04);
-      text-align:center;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(9, 12, 30, 0.04);
+      text-align: center;
     }
-    .feature img{width:54px; height:54px; margin-bottom:12px}
-    .feature h4{margin:6px 0; font-size:18px}
-    .feature p{color:var(--muted); font-size:14px}
+
+    .feature img {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 12px
+    }
+
+    .feature h4 {
+      margin: 6px 0;
+      font-size: 18px
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 14px
+    }
 
     /* HOW IT WORKS */
-    .steps{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-      justify-content:space-between;
+    .steps {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-    .step{
-      flex:1 1 200px;
-      background:#f7fbff;
-      padding:18px;
-      border-radius:10px;
-      text-align:left;
-      box-shadow:0 8px 22px rgba(7,12,30,0.03);
+
+    .step {
+      flex: 1 1 200px;
+      background: #f7fbff;
+      padding: 18px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 8px 22px rgba(7, 12, 30, 0.03);
     }
-    .step h5{margin:0 0 8px 0; font-size:15px}
-    .step p{margin:0; color:var(--muted); font-size:14px}
+
+    .step h5 {
+      margin: 0 0 8px 0;
+      font-size: 15px
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px
+    }
 
     /* SCREENSHOTS */
-    .gallery{
-      display:flex;
+    .gallery {
+      display: flex;
       gap: 20px;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       margin: 30px;
-      justify-content:center;
-      align-items:center;
+      justify-content: center;
+      align-items: center;
       padding: 20px;
     }
-    .screenshot{
+
+    .screenshot {
       width: min(46vw, 260px);
       aspect-ratio: 9 / 19.5;
-      border-radius:18px;
-      background:linear-gradient(180deg,#ffffff,#f6f9ff);
-      box-shadow:0 18px 40px rgba(12,18,40,0.08);
-      display:flex; align-items:center; justify-content:center; overflow:hidden;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #ffffff, #f6f9ff);
+      box-shadow: 0 18px 40px rgba(12, 18, 40, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-    .screenshot img{width:100%; height:100%; object-fit:cover; display:block}
+
+    .screenshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
 
     /* CTA BAND */
-    .cta-band{
-      background: linear-gradient(90deg,#0e1a3a, #0a1024);
-      color:#fff;
-      padding:36px 24px;
-      border-radius:12px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      box-shadow:0 12px 40px rgba(8,12,30,0.18);
+    .cta-band {
+      background: linear-gradient(90deg, #0e1a3a, #0a1024);
+      color: #fff;
+      padding: 36px 24px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      box-shadow: 0 12px 40px rgba(8, 12, 30, 0.18);
     }
-    .cta-band .cta-left h3{margin:0 0 8px 0}
-    .cta-band .cta-left p{margin:0; color:rgba(255,255,255,0.88)}
-    .play-badge{
-      display:inline-block;
-      background:#fff;
-      padding:8px 12px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:700;
-      color:var(--dark);
+
+    .cta-band .cta-left h3 {
+      margin: 0 0 8px 0
+    }
+
+    .cta-band .cta-left p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88)
+    }
+
+    .play-badge {
+      display: inline-block;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--dark);
     }
 
     /* FOOTER */
-    footer{
-      margin-top:36px;
-      background:var(--dark);
-      color:#cfd6ff;
-      padding:40px 24px;
+    footer {
+      margin-top: 36px;
+      background: var(--dark);
+      color: #cfd6ff;
+      padding: 40px 24px;
     }
-    .footer-grid{display:flex; gap:18px; justify-content:space-between; flex-wrap:wrap}
-    .footer-col{min-width:180px}
-    .footer-col h4{color:#fff; margin-bottom:8px}
+
+    .footer-grid {
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      flex-wrap: wrap
+    }
+
+    .footer-col {
+      min-width: 180px
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      margin-bottom: 8px
+    }
 
     /* RESPONSIVE */
-    @media (max-width:980px){
-      .hero-inner{grid-template-columns: 100px 1fr}
-      .features-grid{grid-template-columns: repeat(2,1fr)}
-    }
-    @media (max-width:720px){
-      nav{padding:0 18px}
-      .hero-inner{grid-template-columns: 1fr; text-align:center}
-      .app-logo{margin:0 auto}
-      .hero-content{align-self:center}
-      .features-grid{grid-template-columns: 1fr}
-      .steps{flex-direction:column}
-      .cta-band{flex-direction:column; text-align:center}
-      .gallery{justify-content:center}
+    @media (max-width:980px) {
+      .hero-inner {
+        grid-template-columns: 100px 1fr
+      }
+
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
     }
 
+    @media (max-width:720px) {
+      nav {
+        padding: 0 18px
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center
+      }
+
+      .app-logo {
+        margin: 0 auto
+      }
+
+      .hero-content {
+        align-self: center
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr
+      }
+
+      .steps {
+        flex-direction: column
+      }
+
+      .cta-band {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .gallery {
+        justify-content: center
+      }
+    }
   </style>
 
-  
+
 </head>
+
 <body>
 
   <!-- NAVBAR (unchanged, same as Pollplay) -->
@@ -247,7 +379,7 @@
           <ul class="dropdown-content">
             <li><a href="pollplay.html">Pollplay</a></li>
             <li><a class="active" href="bestiee.html">Bestiee</a></li>
-            
+
           </ul>
         </li>
 
@@ -258,9 +390,9 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="menu-toggle" id="mobile-menu">
-          <span></span><span></span><span></span>
-        </div>
+        <span></span><span></span><span></span>
       </div>
+    </div>
     </div>
   </nav>
 
@@ -275,16 +407,20 @@
 
         <div class="hero-content">
           <h1 id="pollplay-title">Pollplay</h1>
-          <p>Live production entertainment — interact with your favourite shows in real-time. Vote, influence outcomes and take part in the action.</p>
+          <p>Live production entertainment — interact with your favourite shows in real-time. Vote, influence outcomes
+            and take part in the action.</p>
 
           <div class="hero-cta">
             <!-- Use your real Play Store link here -->
-        <a href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" />
-        </a>
+            <a href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play" class="store-badge" />
+            </a>
 
             <a class="btn-secondary" href="index.html#apps">Back to Apps</a>
           </div>
+
+
         </div>
       </div>
     </header>
@@ -292,7 +428,8 @@
     <!-- FEATURES -->
     <section class="section" aria-labelledby="features-title">
       <h3 id="features-title" class="section-title" data-aos="fade-up">Core Features</h3>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="60">Everything you need for live, interactive entertainment — fast, secure, and designed for real-time engagement.</p>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="60">Everything you need for live, interactive
+        entertainment — fast, secure, and designed for real-time engagement.</p>
 
       <div class="features-grid" role="list">
         <div class="feature" data-aos="fade-up" data-aos-delay="80" role="listitem">
@@ -318,7 +455,8 @@
     <!-- HOW IT WORKS -->
     <section class="section" aria-labelledby="how-title">
       <h3 id="how-title" class="section-title" data-aos="fade-up">How it works</h3>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="60">Pollplay is simple: join a show, cast your vote, and enjoy results in real-time.</p>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="60">Pollplay is simple: join a show, cast your vote, and
+        enjoy results in real-time.</p>
 
       <div class="steps" data-aos="fade-up" data-aos-delay="120">
         <div class="step">
@@ -344,11 +482,14 @@
       <p class="section-sub" data-aos="fade-up" data-aos-delay="60">A quick look inside Pollplay </p>
 
       <div class="gallery" data-aos="zoom-in" data-aos-delay="120">
-        <div class="screenshot"><img src="assets/img/pollplay-screen-1.png.jpeg" alt="Pollplay app screenshot - Timer Game"></div>
-        <div class="screenshot"><img src="assets/img/pollplay-screen-2.png.jpeg" alt="Pollplay app screenshot - Watch and earn"></div>
-        <div class="screenshot"><img src="assets/img/pollplay-screen-3.png.jpeg" alt="Pollplay app screenshot - Trending now"></div>
+        <div class="screenshot"><img src="assets/img/pollplay-screen-1.png.jpeg"
+            alt="Pollplay app screenshot - Timer Game"></div>
+        <div class="screenshot"><img src="assets/img/pollplay-screen-2.png.jpeg"
+            alt="Pollplay app screenshot - Watch and earn"></div>
+        <div class="screenshot"><img src="assets/img/pollplay-screen-3.png.jpeg"
+            alt="Pollplay app screenshot - Trending now"></div>
       </div>
-    </section>  
+    </section>
 
     <!-- CTA BAND -->
     <section class="section" aria-labelledby="download-cta">
@@ -359,7 +500,8 @@
         </div>
 
         <div class="cta-right">
-          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank" rel="noopener noreferrer">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.pollplay.app" target="_blank"
+            rel="noopener noreferrer">
             <!-- use official Play badge image if you have it, this is a simple text badge -->
             GET POLLPLAY
           </a>
@@ -394,18 +536,20 @@
 
       <div class="footer-col">
         <h4>Contact</h4>
-        <a href="mailto:support@besttapps.com">support@besttapps.com</a>  
+        <a href="mailto:support@besttapps.com">support@besttapps.com</a>
       </div>
     </div>
 
-    <p style="text-align:center; margin-top:18px; opacity:0.6;">© 2025 Varshith Vegetables and Fruits Private Limited. All rights reserved.
-        </p>
+    <p style="text-align:center; margin-top:18px; opacity:0.6;">© 2025 Varshith Vegetables and Fruits Private Limited.
+      All rights reserved.
+    </p>
   </footer>
 
   <!-- AOS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ once:true, duration:700, easing:'ease-out-cubic' });
+    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
   </script>
 </body>
+
 </html>
